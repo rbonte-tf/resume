@@ -1,0 +1,117 @@
+<mvc:View controllerName="cv.controller.Home"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <VBox>
+                <!-- Personal Info & Image -->
+                <HBox class="sapUiSmallMargin">
+                    <VBox>
+                        <Image src="/images/face.jpeg" width="100px" height="100px" class="circleImage"/>
+                    </VBox>
+                    <VBox class="sapUiSmallMargin">
+                        <Label text="Name: Ruben Bonte"/>
+                        <Label text="Email: bonte_ruben@yahoo.com"/>
+                        <Label text="Phone: +40 771 033 276"/>
+                        <!-- Add other contact details if needed -->
+                    </VBox>
+                </HBox>
+
+                <!-- CV Details -->
+                <IconTabBar>
+                    <items>
+                        <!-- Work Experience -->
+                        <IconTabFilter text="Work" icon="sap-icon://work-history">
+                            <Table items="{path: '/workExperience'}">
+                                <columns>
+                                    <Column>
+                                        <Text text="Company" />
+                                    </Column>
+                                    <Column>
+                                        <Text text="Role" />
+                                    </Column>
+                                    <Column>
+                                        <Text text="Duration" />
+                                    </Column>
+                                </columns>
+                                <items>
+                                    <ColumnListItem>
+                                        <cells>
+                                            <Text text="{company}" />
+                                            <Text text="{role}" />
+                                            <Text text="{duration}" />
+                                        </cells>
+                                    </ColumnListItem>
+                                </items>
+                            </Table>
+                        </IconTabFilter>
+                        <!-- Projects -->
+                        <IconTabFilter icon="sap-icon://open-folder" text="Projects">
+                            <Table items="{path: '/projects'}">
+                                <columns>
+                                    <Column>
+                                        <Text text="Project Name" />
+                                    </Column>
+                                    <Column>
+                                        <Text text="Description" />
+                                    </Column>
+                                    <Column>
+                                        <Text text="Technologies Used" />
+                                    </Column>
+                                    <Column>
+                                        <Text text="Link" />
+                                    </Column>
+                                </columns>
+                                <items>
+                                    <ColumnListItem>
+                                        <cells>
+                                            <Text text="{name}" />
+                                            <Text text="{description}" />
+                                            <Text text="{technologies}" />
+                                            <Text text="{link}" />
+                                        </cells>
+                                    </ColumnListItem>
+                                </items>
+                            </Table>
+                        </IconTabFilter>
+
+                        <!-- Skills -->
+                        <IconTabFilter text="Skills" icon="sap-icon://lead">
+                            <List items="{path: '/skills'}">
+                                <items>
+                                    <StandardListItem title="{name}" description="{level}" />
+                                </items>
+                            </List>
+                        </IconTabFilter>
+
+                        <!-- Education -->
+                        <IconTabFilter text="Education" icon="sap-icon://education">
+                            <Table items="{path: '/education'}">
+                                <columns>
+                                    <Column>
+                                        <Text text="Institution" />
+                                    </Column>
+                                    <Column>
+                                        <Text text="Degree" />
+                                    </Column>
+                                    <Column>
+                                        <Text text="Year" />
+                                    </Column>
+                                </columns>
+                                <items>
+                                    <ColumnListItem>
+                                        <cells>
+                                            <Text text="{institution}" />
+                                            <Text text="{degree}" />
+                                            <Text text="{year}" />
+                                        </cells>
+                                    </ColumnListItem>
+                                </items>
+                            </Table>
+                        </IconTabFilter>
+                    </items>
+                </IconTabBar>
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>
