@@ -1,0 +1,73 @@
+/* General Styles */
+body {
+    font-family: '72', Arial, sans-serif; /* '72' is the SAP font, but we fallback to Arial and sans-serif if not available */
+    background-color: #f5f5f5;
+    color: #32363a; /* Fiori Text Color */
+    margin: 0;
+}
+
+.page {
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+
+h1, h2 {
+    color: #0a6ed1; /* Fiori Highlight Color */
+    margin-top: 0;
+}
+
+/* Personal Info Styles */
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 0 0 3px #0a6ed1; /* This adds a slight shadow and a blue 'ring' around the image */
+    background-color: #fff; /* In case the image has transparent areas, we set a white background */
+}
+
+.personal-info {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+/* Tab Styles */
+.tab {
+    display: flex;
+    gap: 10px;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 20px;
+}
+
+.tablinks {
+    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+    background-color: #f5f5f5;
+    transition: background-color 0.3s;
+    color: #32363a; /* Fiori Text Color */
+    border-bottom: 3px solid transparent;
+}
+
+.tablinks:hover {
+    background-color: #e5e5e5;
+}
+
+.tablinks.active {
+    background-color: #fff;
+    color: #0a6ed1; /* Fiori Highlight Color */
+    border-bottom-color: #0a6ed1; /* Fiori Highlight Color */
+}
+
+.tabcontent {
+    display: none;
+    padding: 20px;
+}
+
+/* Add any other styles or classes specific to your content below. */
