@@ -1,3 +1,6 @@
+document.getElementById("About").style.display = "block"; // Show About content
+document.getElementById("defaultOpen").click();
+
 function openTab(evt, tabName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");

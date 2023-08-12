@@ -5,24 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Add this if you want to create a separate CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 
 <body>
-
     <div class="page">
-        <h1>Resume</h1>
         <div class="personal-info">
             <img src="images/face.jpeg" class="profile-image" alt="Me!">
-            <div>
-                <p>Name: Ruben Bonte</p>
-                <p>Email: bonte_ruben@yahoo.com</p>
-                <p>Phone: +40 771 033 276</p>
+            <div class="contact-info">
+                <p><i class="fas fa-user"></i> Ruben Bonte</p>
+                <p><i class="fas fa-envelope"></i> bonte_ruben@yahoo.com</p>
+                <p><i class="fas fa-phone"></i> +40 771 033 276</p>
             </div>
         </div>
 
         <!-- Tabs -->
         <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'About')" id="defaultOpen">About</button>
             <button class="tablinks" onclick="openTab(event, 'Work')">Work</button>
             <button class="tablinks" onclick="openTab(event, 'Projects')">Projects</button>
             <button class="tablinks" onclick="openTab(event, 'Skills')">Skills</button>
@@ -31,9 +32,56 @@
 
         <!-- Tab content -->
         <!-- You'll need to populate these with data using JS or manually -->
+
+        <div id="About" class="tabcontent">
+            <h2>About Myself</h2>
+            <h3>Personal Summary</h3>
+            <p>
+                An aspiring software developer from Romania looking to learn new things and face interesting challenges
+                along the way. I am looking forward to working with computers and all the beautiful things they have to
+                offer.
+            </p>
+
+            <h3>Skills & Expertise</h3>
+            <ul>
+                <li>Full-stack Web Development</li>
+                <li>Mobile Application Development - Android</li>
+                <li>Database Management</li>
+                <li>UI/UX Design</li>
+            </ul>
+
+            <h3>Hobbies & Interests</h3>
+            <p>
+                Apart from coding, I'm a big fan of cooking and having an organized kitchen.
+                I'm also a music enthusiast, and I love to listen to albums while I work.
+            </p>
+        </div>
+
         <div id="Work" class="tabcontent">
             <h2>Work Experience</h2>
-            <!-- Work Experience Table Goes Here -->
+            <div class="current-job">
+                <h3>Current Position</h3>
+                <p><strong>Role:</strong> Junior Consultant</p>
+                <p><strong>Company:</strong> MHP - A Porche Company</p>
+                <p><strong>Date:</strong> Oct 2022 - Present</p>
+            </div>
+            <h3>Past Experiences</h3>
+            <table class="work-experience">
+                <thead>
+                    <tr>
+                        <th>Company</th>
+                        <th>Role</th>
+                        <th>Duration</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>MHP - A Porche Company</td>
+                        <td>Intern</td>
+                        <td>Jun 2022 - Oct 2022</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
         <div id="Projects" class="tabcontent">
