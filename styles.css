@@ -127,3 +127,75 @@ h2 {
 .work-experience tr:hover {
     background-color: #f5f5f5;
 }
+
+.project-card {
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-card img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.btn-view {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;  /* Sample blue color */
+    color: #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-view:hover {
+    background-color: #0056b3;  /* Darker blue on hover */
+}
+
+.skill-bubbles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.skill {
+    background-color: transparent;
+    border: 2px solid #5a5a5a;  /* Adding a border with the previous background color */
+    border-radius: 50px;
+    color: #414141;
+    padding: 5px 15px;
+    font-size: 0.8rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.skill:hover {
+    background-color: #b1b1b1;
+    color: black;  /* Text color turns to white on hover */
+}
+
+.icon-spacing {
+    margin-right: 8px; /* Adjust the value as per your needs */
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px; /* This creates a gap between the groups */
+}
+
+.contact-group {
+    flex: 1;
+}
