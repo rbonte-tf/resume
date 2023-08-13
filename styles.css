@@ -243,7 +243,7 @@ img {
 
 .skills-section {
     margin-bottom: 20px;
-    margin-right: 100px;
+    margin-right: 40px;
 }
 
 .skill {
@@ -253,17 +253,46 @@ img {
     margin: 8px 0;
 }
 
-.progress-bar {
-    width: 60%;
-    height: 6px;
-    background: #E0E0E0;
-    border-radius: 3px;
+/* Perks section */
+.perks-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
 }
 
-.progress {
+.perks-column {
+    flex: 1;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+
+.perks-section h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.perk {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.perk span {
+    display: block;
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+.perk-progress-bar {
+    height: 16px;
+    background-color: #dcdcdc;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.perk-progress {
     height: 100%;
-    background: #007BFF;
-    border-radius: 3px;
+    background-color: #4CAF50;
+    width: 0%;
 }
 
 .education-details {
