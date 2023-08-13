@@ -23,7 +23,7 @@ h1,h2 {
 
 }
 
-/* Personal Info */
+/* personal info */
 .profile-image {
     width: 100px;
     height: 100px;
@@ -187,6 +187,12 @@ img {
     background-color: #0056b3;
 }
 
+.project-container {
+    max-height: 500px;
+    overflow-y: auto;
+    padding-right: 15px; /* prevent scroll bar from pushing content */
+}
+
 .skill-bubbles {
     display: flex;
     flex-wrap: wrap;
@@ -209,7 +215,7 @@ img {
 }
 
 .skill:hover {
-    background-color: #b1b1b1;
+    background-color: #cccccc;
     color: black;
     cursor: pointer;
 }
@@ -226,4 +232,55 @@ img {
 
 .contact-group {
     flex: 1;
+}
+
+.skills-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* space between columns */
+    flex: 1;
+}
+
+.skills-section {
+    margin-bottom: 20px;
+    margin-right: 100px;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 8px 0;
+}
+
+.progress-bar {
+    width: 60%;
+    height: 6px;
+    background: #E0E0E0;
+    border-radius: 3px;
+}
+
+.progress {
+    height: 100%;
+    background: #007BFF;
+    border-radius: 3px;
+}
+
+.education-details {
+    margin-left: 10px;
+}
+
+.education-details h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.timeline .entry {
+    display: flex;
+    align-items: center;
+}
+
+.year {
+    font-weight: bold;
+    margin-right: 20px;
 }

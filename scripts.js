@@ -1,32 +1,21 @@
 document.getElementById("About").style.display = "block";
 document.getElementById("defaultOpen").click();
 
-function openTab(evt, tabName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(tabName).style.display = "block";
-    evt.currentTarget.className += " active";
-}
-
 document.addEventListener("DOMContentLoaded", function () {
     let projectCards = document.querySelectorAll(".project-card");
     let skills = document.querySelectorAll(".skill");
     let filterMessage = document.getElementById("filterMessage");
     let resetFilter = document.getElementById("resetFilter");
 
-    skills.forEach(skill => {
+    let clickableSkills = document.querySelectorAll(".skill.clickable");
+
+    clickableSkills.forEach(skill => {
         skill.addEventListener("click", function () {
             let selectedSkill = this.textContent;
             filterProjectsBySkill(selectedSkill);
         });
     });
+
 
     function filterProjectsBySkill(skill) {
         projectCards.forEach(card => {

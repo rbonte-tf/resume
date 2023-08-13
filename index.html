@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -24,8 +25,8 @@
                 <div class="contact-group">
                     <p><i class="fab fa-github icon-spacing"></i><a href="https://github.com/rbonte-tf" target="_blank"
                             rel="noopener noreferrer">rbonte-tf</a></p>
-                    <p><i class="fab fa-linkedin icon-spacing"></i><a href="https://www.linkedin.com/in/bonteruben/"
-                            target="_blank" rel="noopener noreferrer">bonteruben</a></p>
+                    <p><i class="fab fa-linkedin icon-spacing"></i><a href="https://www.linkedin.com/in/bonte-ruben/"
+                            target="_blank" rel="noopener noreferrer">bonte-ruben</a></p>
                 </div>
             </div>
         </div>
@@ -91,50 +92,176 @@
 
         <div id="Projects" class="tabcontent">
             <h2>Projects</h2>
-            <p id="filterMessage"><span id="resetFilter"></span></p>
+            <div class="project-container">
+                <p id="filterMessage"><span id="resetFilter"></span></p>
 
-            <div class="project-card">
-                <h3>Personality Emulator using Markov Chains</h3>
-                <div class="skill-bubbles">
-                    <span class="skill">Python</span>
-                    <span class="skill">Discord API</span>
-                    <span class="skill">Markov Chains</span>
-                    <span class="skill">Natural Language Processing</span>
+                <div class="project-card">
+                    <h3>Personality Emulator using Markov Chains</h3>
+                    <div class="skill-bubbles">
+                        <span class="skill clickable">Python</span>
+                        <span class="skill clickable">Discord API</span>
+                        <span class="skill clickable">Markov Chains</span>
+                        <span class="skill clickable">Natural Language Processing</span>
+                    </div>
+                    <a href="https://www.youtube.com/watch?v=rzolEHmXNBE" target="_blank" rel="noopener noreferrer" class="btn-view">View Project</a>
                 </div>
-                <a href="#" class="btn-view">View Project</a>
-            </div>
 
-            <div class="project-card">
-                <h3>GPT-2 based Voice Activated Home Assistant</h3>
-                <div class="skill-bubbles">
-                    <span class="skill">Python</span>
-                    <span class="skill">Speech Recognition</span>
-                    <span class="skill">Fine-tuning</span>
+                <div class="project-card">
+                    <h3>GPT-2 based Voice Activated Home Assistant</h3>
+                    <div class="skill-bubbles">
+                        <span class="skill clickable">Python</span>
+                        <span class="skill clickable">Speech Recognition</span>
+                        <span class="skill clickable">Fine-tuning</span>
+                    </div>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="btn-view">View Project</a>
                 </div>
-                <a href="#" class="btn-view">View Project</a>
+
+                <div class="project-card">
+                    <h3>Game</h3>
+                    <div class="skill-bubbles">
+                        <span class="skill clickable">C#</span>
+                        <span class="skill clickable">Video Games</span>
+                        <span class="skill clickable">Unity</span>
+                        <span class="skill clickable">Custom Art</span>
+                    </div>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="btn-view">View Project</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>Frontend</h3>
+                    <div class="skill-bubbles">
+                        <span class="skill clickable">Apache</span>
+                        <span class="skill clickable">Database</span>
+                        <span class="skill clickable">JavaScript</span>
+                    </div>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="btn-view">View Project</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>Mobile Application</h3>
+                    <div class="skill-bubbles">
+                        <span class="skill clickable">JavaScript</span>
+                        <span class="skill clickable">Mobile</span>
+                        <span class="skill clickable">Database</span>
+                    </div>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="btn-view">View Project</a>
+                </div>
+
             </div>
         </div>
 
         <div id="Skills" class="tabcontent">
             <h2>Skills</h2>
-            <div class="skill">
-                <span>Python</span>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 80%;"></div>
+            <div class="skills-columns">
+
+                <div class="skills-column">
+        
+                    <div class="skills-section">
+                        <h3>Programming</h3>
+                        <div class="skill">
+                            <span>SAPUI5</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>ABAP</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 60%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>JavaScript</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                        <!-- ... -->
+                    </div>
+
+                    <div class="skills-section">
+                        <h3>Technical</h3>
+                        <div class="skill">
+                            <span>Databases</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>OOP</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 95%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>MVC</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <!-- ... -->
+                    </div>
                 </div>
-            </div>            
+
+                <div class="skills-column">
+                   
+                    <div class="skills-section">
+                        <h3>Languages</h3>
+                        <div class="skill">
+                            <span>Romanian</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 100%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>English</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <!-- ... -->
+                    </div>
+                    
+                    <div class="skills-section">
+                        <h3>Soft Skills</h3>
+                        <div class="skill">
+                            <span>Communication</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Teamwork</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <!-- ... -->
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div id="Education" class="tabcontent">
             <h2>Education</h2>
             <div class="timeline">
                 <div class="entry">
-                    <span class="year">2022</span>
-                    <p>MSc in Computer Science from XYZ University</p>
+                    <span class="year">2023</span>
+                    <div class="education-details">
+                        <h3>Bachelor of Science in Automation</h3>
+                        <p><strong>University:</strong> UTCN University</p>
+                        <p><strong>License Thesis:</strong> "Path Optimization using a Genetic Algorithm"</p>
+                    </div>
                 </div>
+            </div>
+            <div class="timeline">
                 <div class="entry">
-                    <span class="year">2020</span>
-                    <p>BS in Software Engineering from ABC University</p>
+                    <span class="year">2019</span>
+                    <div class="education-details">
+                        <h3>Mathematics and Informatics High School</h3>
+                        <p><strong>High School:</strong> Mathematics and Informatics</p>
+                        <p><strong>Diploma:</strong> Baccalaureate Diploma</p>
+                    </div>
                 </div>
             </div>
         </div>
